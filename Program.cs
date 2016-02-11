@@ -6,15 +6,21 @@ namespace Use_data
 	{
 		public static void Main (string[] args)
 		{
-			object a = 123;
-			object b = 3.141592;
-			object c = true;
-			object d = "안녕하세요.";
+			int a = 123;
+			object b = (object)a; //a unboxing, save to b(heap);
+			int c = (int)b; //b unboxing, save to c(stack);
 
 			Console.WriteLine (a);
 			Console.WriteLine (b);
 			Console.WriteLine (c);
-			Console.WriteLine (d);
+
+			double x = 3.141592;
+			object y = x; //x unboxing, save to y(heap);
+			int z = (double)y; //y unboxing, save to z(stack);
+
+			Console.WriteLine (x);
+			Console.WriteLine (y);
+			Console.WriteLine (z);
 		}
 	}
 }
