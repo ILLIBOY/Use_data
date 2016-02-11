@@ -6,17 +6,21 @@ namespace Use_data
 	{
 		public static void Main (string[] args)
 		{
-			sbyte a = 127;
-			Console.WriteLine (a);
+			float a = 69.6875f;
+			Console.WriteLine ("a : {0}", a);
 
-			int b = (int)a;
-			Console.WriteLine (b);
+			double b = (double)a;
+			Console.WriteLine ("b : {0}", b);
+		
+			Console.WriteLine ("69.6875 == b : {0}", 69.6875 == b);
 
-			int x = 128;
-			Console.WriteLine (x);
+			float x = 0.1f;
+			Console.WriteLine ("x : {0}", x);
 
-			sbyte y = (sbyte)x;
-			Console.WriteLine (y);
+			double y = (double)x;
+			Console.WriteLine ("y : {0}", y);
+
+			Console.WriteLine ("0.1 == y : {0}", 0.1 == y);
 		}
 	}
 }
