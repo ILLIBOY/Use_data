@@ -6,21 +6,17 @@ namespace Use_data
 	{
 		public static void Main (string[] args)
 		{
-			int a = 123;
-			object b = (object)a; //a unboxing, save to b(heap);
-			int c = (int)b; //b unboxing, save to c(stack);
-
+			sbyte a = 127;
 			Console.WriteLine (a);
+
+			int b = (int)a;
 			Console.WriteLine (b);
-			Console.WriteLine (c);
 
-			double x = 3.141592;
-			object y = x; //x unboxing, save to y(heap);
-			int z = (double)y; //y unboxing, save to z(stack);
-
+			int x = 128;
 			Console.WriteLine (x);
+
+			sbyte y = (sbyte)x;
 			Console.WriteLine (y);
-			Console.WriteLine (z);
 		}
 	}
 }
