@@ -4,13 +4,14 @@ namespace Use_data
 {
 	class MainClass
 	{
+		enum DialogResult { YES, NO, CANCEL, CONFIRM, OK }
 		public static void Main (string[] args)
 		{
-			const int MAX_INT = 2147483647;
-			const int MIN_INT = -2147483647;
-
-			Console.WriteLine (MAX_INT);
-			Console.WriteLine (MIN_INT);
+			Console.WriteLine ((int)DialogResult.YES); //0
+			Console.WriteLine ((int)DialogResult.NO); //1
+			Console.WriteLine ((int)DialogResult.CANCEL); //2
+			Console.WriteLine ((int)DialogResult.CONFIRM); //3
+			Console.WriteLine ((int)DialogResult.OK); //4
 		}
 	}
 }
