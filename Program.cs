@@ -4,18 +4,15 @@ namespace Use_data
 {
 	class MainClass
 	{
-		enum DialogResult { YES, NO, CANCEL, CONFIRM, OK }
+		enum DialogResult { YES = 10, NO, CANCEL, CONFIRM = 50, OK }
 
 		public static void Main (string[] args)
 		{
-			DialogResult result = DialogResult.YES;
-
-			Console.WriteLine (result);
-			Console.WriteLine (result == DialogResult.YES); //0
-			Console.WriteLine (result == DialogResult.NO); //1
-			Console.WriteLine (result == DialogResult.CANCEL); //2
-			Console.WriteLine (result == DialogResult.CONFIRM); //3
-			Console.WriteLine (result == DialogResult.OK); //4
+			Console.WriteLine ((int)DialogResult.YES); //0
+			Console.WriteLine ((int)DialogResult.NO); //1
+			Console.WriteLine ((int)DialogResult.CANCEL); //2
+			Console.WriteLine ((int)DialogResult.CONFIRM); //3
+			Console.WriteLine ((int)DialogResult.OK); //4
 		}
 	}
 }
